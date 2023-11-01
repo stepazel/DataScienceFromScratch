@@ -1,0 +1,31 @@
+1st algorithm: for a review to be recommended, it has to have 4 votes and at least 65 percent of them have to be upvotes
+
+2nd algorithm: if the user votes at least fifty percent as me (this means matching upvotes and downvotes), all reviews of the user (that i have not yet voted for) will be recommended to me
+
+so, it works that the users:
+1. write reviews
+2. vote reviews (upvote, downvote)
+
+
+the algorithms are not connected (I think)
+because the 3rd algorithm is the concatenation of the first 2
+
+
+SKU format algos:
+1. someething with letter-number-letter-number-l-n-special character?
+2. 10 middle (like from the center 5 and 5) hexadecimal represantition of the hashcode of a product (name?)
+3. Combination of the first two - 6 characters from the start of 1st and 5 characters from the start of 2
+
+so SKU is like ID
+
+should use Relational, MongoDB and Neo4j and also Redis
+group of 2 (us) need to have 3 data persistence models - the one existing (relational) and 2 more (document and graph/redis?)
+
+the algorithms and the persistence storage are to be configured in config files
+
+
+significant pieces of the app need to be documented.. so we need to reverse engineer the app into the documentation
+for example how the system will use different algos for recommendation and SKUs generation
+
+
+Everything should be in Onion architecture
